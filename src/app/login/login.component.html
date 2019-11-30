@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Welcome - BFUI</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8">
+      <link href="/src/styles.scss" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="welcomeItem">
+          <form class="text-center border border-light p-5">
+
+            <p class="h4 mb-4">CanvasMix</p>
+          
+            <!-- Email -->
+            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Correo Electrónico">
+          
+            <!-- Password -->
+            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Contraseña">
+          
+            <div class="d-flex justify-content-around">
+              <div>
+                <!-- Remember me -->
+                <mdb-checkbox [default]="true">Permanezca conectado</mdb-checkbox>
+              </div>
+              <div>
+                <!-- Forgot password -->
+                <a href="">¿Olvidó la contraseña?</a>
+              </div>
+            </div>
+          
+            <!-- Sign in button -->
+            <button mdbBtn color="info" block="true" class="my-4" type="submit">Iniciar Sesión</button>
+          
+            <!-- Register -->
+            <p>No puede ingresar?
+              <a href="">Solicitar registro</a>
+            </p>
+          
+            <!-- Social login -->
+            <p>Soporte:</p>
+          
+            <a type="button" class="light-blue-text mx-2">
+              <mdb-icon fab icon="facebook"></mdb-icon>
+            </a>
+            <a type="button" class="light-blue-text mx-2">
+              <mdb-icon fab icon="twitter"></mdb-icon>
+            </a>
+            <a type="button" class="light-blue-text mx-2">
+              <mdb-icon fab icon="linkedin"></mdb-icon>
+            </a>
+            <a type="button" class="light-blue-text mx-2">
+              <mdb-icon fab icon="github"></mdb-icon>
+            </a>
+          
+          </form>
+          <!-- Default form login -->
+        </div>
+  </body>
+</html>
+
+
