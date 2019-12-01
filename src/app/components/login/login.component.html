@@ -9,17 +9,17 @@
 
     </head>
 
-    <body>
+    <body class="LoginWelcome">
         <div class="welcomeItem">
-          <form class="text-center border border-light p-5">
+          <form class="text-center border border-info p-5 bg-white"  #formLogin="ngForm" (submit)="onLogin()">
 
             <p class="h4 mb-4">CanvasMix</p>
           
             <!-- Email -->
-            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Correo Electrónico">
+            <input  [(ngModel)]="email" type="email" name="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="Correo Electrónico">
           
             <!-- Password -->
-            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Contraseña">
+            <input  [(ngModel)]="password" type="password" name="email" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Contraseña">
           
             <div class="d-flex justify-content-around">
               <div>

@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Welcome - BFUI</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="UTF-8">
+      <link href="/src/styles.scss" rel="stylesheet">
+
+    </head>
+
+    <body>
+      <main>
+        <div class="side-nav-container bg blue-gradient">
+            <div class="side-nav pt-4 px-3">
+
+                <a routerLink="/user/login" 
+                mdbPopover="Regresar"
+                placement="right"
+                mdbWavesEffect
+                triggers="hover"
+                class="text-light my-2"><i class="fas fa-chevron-circle-left fa-lg"></i></a>
+
+                <a href="/courses" 
+                mdbPopover="Cursos"
+                placement="right"
+                mdbWavesEffect
+                triggers="hover"
+                class="text-light my-2"><i class="fas fa-book-open fa-lg"></i></a>
+
+                
+
+               <div class="side-nav-bottom">
+                  <a   
+                  mdbPopover="Cerrar Sesión"
+                  placement="right"
+                  mdbWavesEffect
+                  triggers="hover" 
+                  (click)="onLogout()" class="text-light"><i class="fas fa-power-off fa-lg"></i></a>
+               </div>
+
+            </div>
+          </div>
+
+          <div class="main-container bg-white">
+              <div class="bg-info">
+                  <p>
+                      <app-dashboard></app-dashboard>
+                    </p>
+                </div>
+          </div>
+
+        </main>
+    </body>
+</html>
+
+
