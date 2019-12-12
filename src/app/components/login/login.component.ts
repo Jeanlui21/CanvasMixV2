@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 import { LoginService } from 'src/app/services/login.service';
@@ -12,11 +12,17 @@ import { MDBModalRef, MDBModalService } from 'angular-bootstrap-md';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
   modalRef: MDBModalRef;
 
   constructor(public afAuth: AngularFireAuth, private router: Router, private authService: LoginService, private modalService: MDBModalService) { }
+ 
+  ngOnInit(){
+    this.onLoginRedirect();
+  }
+
+ 
   openLogin() {
     this.modalRef = this.modalService.show(IngresoComponent)
   }

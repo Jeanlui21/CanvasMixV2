@@ -24,7 +24,7 @@ export class MenuComponent implements OnInit {
         console.log('user logged');
         this.isLogged = true;
         if ( this.router.url === 'login') {
-          this.router.navigate(['menu']);
+          this.router.navigate(['dashboard']);
         } else {
 
         }
