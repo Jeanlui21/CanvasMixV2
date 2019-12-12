@@ -1,0 +1,42 @@
+<app-menu></app-menu>
+<body class="vhpersonalizado bg-canvas">
+      <div class="container-fluid blue-gradient text-white text-center px-0 pt-2 pb-2">
+          <div class="row m-0 p-0">
+              <div class="col-sm d-flex flex-row">
+                  <button mdbBtn (click)="openOpciones()" class="btn btn-sm my-0 py-0"  type="button" color="info" mdbWavesEffect><mdb-icon fas icon="bars" class="pr-2"></mdb-icon>Opciones</button>
+              </div>
+              <div class="col-sm">
+                <h3 class="my-0 py-0"><strong>Tablero de Cursos</strong></h3>
+              </div>
+              <div class="col-sm">
+              </div>
+            </div>
+        </div>
+
+
+      
+      <div class="container">
+          <div class="row">
+
+            <div class="col-md-3 col-sm-6 col-xs-6 text-center"  *ngFor="let courses of cursos">
+                <a (click)="redirectCurso(courses.id,courses.name)">
+                    <mdb-card class="my-3 animated rotateIn" borderColor="border-default" style="max-width: 20rem">
+                        <mdb-card-header class="text-default"><mdb-icon fas icon="book fa-lg"></mdb-icon></mdb-card-header>
+                        <mdb-card-body class="cardHeight">
+                          <mdb-card-title class="text-dark cardtick py-0 my-0">
+                            <h5 class="py-0 my-0">{{ courses.name }}</h5>
+                          </mdb-card-title>
+
+                        </mdb-card-body>
+                        <mdb-card-footer class="text-muted"> Fecha de inicio: {{ courses.created_at | date : 'yyyy-MM-dd'}}</mdb-card-footer>
+                      </mdb-card>
+                </a>
+
+                <div>
+                  <p>{{ courses.id | explorer }}</p>
+                </div>
+            </div>
+
+          </div>
+        </div>
+</body>

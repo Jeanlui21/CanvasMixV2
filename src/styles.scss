@@ -1,0 +1,94 @@
+.intro-header {
+  height: unset !important;
+}
+.top-nav-collapse {
+  background-color: #78909c !important;
+}
+.vhpersonalizado {
+  height: 100vh !important;
+}
+
+
+body {
+  background-color: #eeeeee;
+}
+
+.cardtick {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.cardHeight {
+  min-height: 110px;
+  height: 110px;
+  max-height: 210px;
+}
+
+.verticalheight {
+  height: 100vh !important;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  
+}
+
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+@media (max-width: 790px) {
+  .full-height,
+  .full-height body,
+  .full-height header,
+  .full-height header .view {
+    height: 700px;
+  }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.formBorder {
+  border-radius: 20px;
+}
+
+
+.formBorderMin {
+  border-radius: 15px;
+}
+
+.formBorderLeft {
+border-bottom-left-radius: 20px;
+}
+
+.formBorderRight {
+  border-bottom-right-radius: 20px;
+  }
+
+.borderHeader {
+  border-top-width: 1em;
+}
+
+input[type=file]{
+  padding:10px;
+  background:#007E33  ;
+  border-radius: 40px;
+}
+
+.postEvento {
+  min-height: 100px;
+ 
+}
+
+.postAvatar {
+  min-height: 100%;
+}
